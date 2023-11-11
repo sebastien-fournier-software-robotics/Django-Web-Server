@@ -1,0 +1,12 @@
+{% extends 'part1/base.html' %} {% block content %}
+
+<h1>Part. 1 !</h1>
+<p>Mes urls sont :</p>
+<ul>
+  {% for url in urls %}
+  <li>{{ url.url_string }}</li>
+  {% endfor %}
+</ul>
+<p>Il y a {{ urls|length }} URLs présents dans la DB.</p>
+
+{% endblock %}
