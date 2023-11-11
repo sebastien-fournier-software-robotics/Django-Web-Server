@@ -1,0 +1,17 @@
+{% comment %} # part1/templates/part1/hello.html {% endcomment %}
+
+<html>
+  <head>
+    <title>myAPI</title>
+  </head>
+  <body>
+    <h1>Part. 1 !</h1>
+    <p>Mes urls sont :</p>
+    <ul>
+      {% for url in urls %}
+      <li>{{ url.url_string }}</li>
+      {% endfor %}
+    </ul>
+    <p>Il y a {{ urls|length }} URLs présents dans la DB.</p>
+  </body>
+</html>
