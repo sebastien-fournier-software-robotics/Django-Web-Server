@@ -4,7 +4,12 @@ from django.shortcuts import render
 from part1.models import Url
 
 
-def hello(request):
-    url_list = Url.objects.all()
+def url_list(request):
+    urls = Url.objects.all()
 
-    return render(request, "part1/url_list.html", {"urls": url_list})
+    return render(request, "part1/url_list.html", {"urls": urls})
+
+
+def url_detail(request, id):
+    url = Url.objects.get(id=id)
+    return render(request, "part1/url_detail.html", {"url": url})

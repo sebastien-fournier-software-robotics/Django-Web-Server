@@ -1,0 +1,16 @@
+{% extends 'part1/base.html' %} {% block content %}
+
+<h2>{{ url.url_string }}</h2>
+
+<ul>
+  <li>Domain name : {{ url.domain_name }}</li>
+  <li>Protocol : {{ url.get_protocol_display }}</li>
+  <li>Title : {{ url.title }}</li>
+  {% for image in url.image %}
+  <li>{{ image }}</li>
+  {% endfor %}
+  <li>Number of stylesheets : {{ url.stylesheets }}</li>
+</ul>
+
+<a href="{% url 'url-list' %}">Retour</a>
+{% endblock %}

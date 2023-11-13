@@ -4,7 +4,7 @@
 <p>Mes urls sont :</p>
 <ul>
   {% for url in urls %}
-  <li>{{ url.url_string }}</li>
+  <li><a href="{% url 'url-detail' url.id %}">{{ url.url_string }}</a></li>
   {% endfor %}
 </ul>
 <p>Il y a {{ urls|length }} URLs présents dans la DB.</p>
