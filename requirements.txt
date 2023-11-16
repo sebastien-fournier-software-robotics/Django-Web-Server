@@ -7,3 +7,4 @@ djangorestframework==3.14.0
 requests==2.31.0
 beautifulsoup4==4.12.2
 pandasdmx==1.10.0
+requests-cache==1.1.0
