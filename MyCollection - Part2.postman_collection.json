@@ -1,0 +1,35 @@
+{
+	"info": {
+		"_postman_id": "a1c31510-1e04-42ad-9422-f33fa626b05c",
+		"name": "MyCollection - Part2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30950421"
+	},
+	"item": [
+		{
+			"name": "Get exchange data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://dogst0ne.pythonanywhere.com/api/v1/exchangedata/get_exchange_data/",
+					"protocol": "http",
+					"host": [
+						"dogst0ne",
+						"pythonanywhere",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"exchangedata",
+						"get_exchange_data",
+						""
+					]
+				},
+				"description": "Get a dictionnary with :  \n\\-The 15min delayed bitcoin market price in EUR  \n\\-The monthly conversion rate from last month from EUR to GBP from the European Central Bank  \n\\-The bitcoin price first value of this dictionnary but converted to GBP according to the official ECB rate"
+			},
+			"response": []
+		}
+	]
+}
