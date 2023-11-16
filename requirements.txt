@@ -6,3 +6,4 @@ pytz==2023.3.post1
 djangorestframework==3.14.0
 requests==2.31.0
 beautifulsoup4==4.12.2
+pandasdmx==1.10.0
