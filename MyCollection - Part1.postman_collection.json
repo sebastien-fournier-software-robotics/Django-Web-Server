@@ -35,7 +35,8 @@
 						"create_url",
 						""
 					]
-				}
+				},
+				"description": "Create an url object."
 			},
 			"response": []
 		},
@@ -58,7 +59,8 @@
 						"urls",
 						""
 					]
-				}
+				},
+				"description": "List all urls that have been created"
 			},
 			"response": []
 		},
@@ -91,7 +93,8 @@
 							"value": "2"
 						}
 					]
-				}
+				},
+				"description": "Same as \"List urls\". Displaying the next page since there are 2 objects per page."
 			},
 			"response": []
 		},
@@ -120,7 +123,8 @@
 							"value": "2"
 						}
 					]
-				}
+				},
+				"description": "Get an url given its ID."
 			},
 			"response": []
 		},
@@ -144,7 +148,8 @@
 						"1",
 						""
 					]
-				}
+				},
+				"description": "Delete an url given its ID."
 			},
 			"response": []
 		}
