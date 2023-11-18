@@ -17,6 +17,8 @@ class ExchangeDataViewSet(viewsets.ViewSet):
     def get_exchange_data(self, request):
         # Get the Bitcoin price in EUR from the Blockchain API, delayed from 15min
         bitcoin_data = requests.get("https://blockchain.info/ticker")
+        bitcoin_data.raise_for_status()
+
         bitcoin_eur = bitcoin_data.json().get("EUR").get("15m")
 
         # Get the average exchange rate from last month for the EUR-GBP pair, from the ECB data
