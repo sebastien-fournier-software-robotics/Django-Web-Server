@@ -7,7 +7,7 @@ from part2.views import ExchangeDataViewSet
 
 router = routers.SimpleRouter()
 
-router.register("urls", UrlViewSet, basename="urls")
+router.register("url", UrlViewSet, basename="url")
 router.register("exchangedata", ExchangeDataViewSet, basename="exchangedata")
 
 urlpatterns = [
